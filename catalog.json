@@ -1,0 +1,19 @@
+[{
+    "id":1,"name":"book", "book": true, "food": false,"medical": false, "imported": false, "price": 12.49
+},{
+     "id":2, "name":"music CD", "book": false, "food": false, "medical":false, "imported": false, "price":14.99
+},{
+     "id":3, "name":"chocolate bar", "book": false, "food": true, "medical":false, "imported": false,"price": 0.85
+},{
+     "id":4, "name":"imported box of chocolates", "book": false, "food": true, "medical":false,"imported":  true, "price":10.00
+},{
+     "id":8, "name":"imported box of chocolates", "book": false, "food": true, "medical":false, "imported": true, "price":11.25
+},{
+     "id":5, "name":"imported bottle of perfume", "book": false, "food": false,"medical": false,"imported":  true,"price": 47.50
+},{
+    "id":9, "name":"imported bottle of perfume", "book": false, "food": false,"medical": false, "imported": true,"price": 27.99
+},{
+     "id":6, "name":"bottle of perfume", "book": false, "food": false,"medical": false, "imported": false, "price":18.99
+},{
+    "id":7, "name":"packet of headache pills", "book": false, "food": false,"medical": true, "imported": false, "price":9.75
+}]
