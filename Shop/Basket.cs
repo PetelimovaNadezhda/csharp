@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shop
 {
-    class Basket
+    public class Basket
     {
         public string name;
         Dictionary<int, int> products = new Dictionary<int, int>();
@@ -28,11 +28,11 @@ namespace Shop
         }
 
 
+        public double tax = 0;
+        public double sum = 0;
         public void PrintReceipt()
         {
             Console.WriteLine(this.name + ":");
-            double tax = 0;
-            double sum = 0;
             foreach (KeyValuePair<int, int> id in products)
             {
                 int count = id.Value;
@@ -40,9 +40,9 @@ namespace Shop
                 double currentTax = Calc.Cost(p) * count;
                 tax += currentTax;
                 double price = p.price * count + currentTax;
-                sum += price * count;
+                sum += price;
 
-                Console.WriteLine("     " + count + " " + p.name + ": " + String.Format("{0:0.00}", Math.Round(price * count, 2)));
+                Console.WriteLine("     " + count + " " + p.name + ": " + String.Format("{0:0.00}", Math.Round(price, 2)));
             }
             Console.WriteLine("     " + "Sales Taxes: " + String.Format("{0:0.00}", Math.Round(tax, 2)));
             Console.WriteLine("     " + "Total: " + String.Format("{0:0.00}", Math.Round(sum, 2)));

@@ -10,7 +10,7 @@ namespace Shop
 {
     class Receipt
     {
-        static public Dictionary<int, Products> catalog = new Dictionary<int, Products>();
+        public static Dictionary<int, Products> catalog = new Dictionary<int, Products>();
 
         public static void AddCatalog()
         {
