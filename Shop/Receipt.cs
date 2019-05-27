@@ -37,7 +37,7 @@ namespace Shop
             shop2.AddProduct(4);
             shop2.AddProduct(5);
 
-            Basket shop3 = new Basket("Output 2");
+            Basket shop3 = new Basket("Output 3");
             shop3.AddProduct(9);
             shop3.AddProduct(6);
             shop3.AddProduct(7);
