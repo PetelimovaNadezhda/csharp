@@ -1,18 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Shop
+namespace Products1
 {
-
-    class Calc
+   public class Tax : ITaxCalculator
     {
-        public static double taxImported = 0.05;
-        public static double taxProducts = 0.1;
+        public double taxImported = 0.05;
+        public double taxProducts = 0.1;
 
-        public static double Cost(Products p)
+        public double Cost(Products p)
         {
             double cost = 0;
 
@@ -26,5 +21,6 @@ namespace Shop
             }
             return cost;
         }
+
     }
 }

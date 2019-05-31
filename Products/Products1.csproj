@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B2033B55-1112-4EE3-8FAC-E3C8F116A33E}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Shop</RootNamespace>
-    <AssemblyName>Shop</AssemblyName>
+    <ProjectGuid>{CE023F14-41F1-45F8-9D84-A09C927A9D87}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Products</RootNamespace>
+    <AssemblyName>Products1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,23 +32,24 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BasketPrice.cs" />
-    <Compile Include="Receipt.cs" />
+    <Compile Include="Enum\Book.cs" />
+    <Compile Include="Enum\Food.cs" />
+    <Compile Include="Enum\Medical.cs" />
+    <Compile Include="IProduct.cs" />
+    <Compile Include="ITaxCalculator.cs" />
+    <Compile Include="Parsing.cs" />
+    <Compile Include="Products.cs" />
+    <Compile Include="Tax.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Products\Products1.csproj">
-      <Project>{ce023f14-41f1-45f8-9d84-a09c927a9d87}</Project>
-      <Name>Products1</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

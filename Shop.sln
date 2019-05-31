@@ -6,11 +6,10 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop", "Shop\Shop.csproj", "{B2033B55-1112-4EE3-8FAC-E3C8F116A33E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7D6E98FE-6DC1-4F47-87D7-0CB7F37B4C88}"
-	ProjectSection(SolutionItems) = preProject
-		catalog.json = catalog.json
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopTests", "ShopTests\ShopTests.csproj", "{50B2C50A-C1EA-4CE1-B177-DE2D21246265}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Products1", "Products\Products1.csproj", "{CE023F14-41F1-45F8-9D84-A09C927A9D87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +25,10 @@ Global
 		{50B2C50A-C1EA-4CE1-B177-DE2D21246265}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50B2C50A-C1EA-4CE1-B177-DE2D21246265}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50B2C50A-C1EA-4CE1-B177-DE2D21246265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE023F14-41F1-45F8-9D84-A09C927A9D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE023F14-41F1-45F8-9D84-A09C927A9D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE023F14-41F1-45F8-9D84-A09C927A9D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE023F14-41F1-45F8-9D84-A09C927A9D87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
