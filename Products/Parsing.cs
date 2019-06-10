@@ -8,10 +8,10 @@ namespace Products1
 {
     public class Parsing
     {
-        public static Dictionary<string, List<Products>> parsingInput(string path)
+        public static Dictionary<string, List<IProduct>> ParsingInput(string path)
         {
-            Dictionary<string, List<Products>> baskets = new Dictionary<string, List<Products>>();
-            List<Products> productsInBasket = new List<Products>();
+            Dictionary<string, List<IProduct>> baskets = new Dictionary<string, List<IProduct>>();
+            List<IProduct> productsInBasket = new List<IProduct>();
             StreamReader reader = File.OpenText(path);
             string line = reader.ReadLine();
             int countBasket = 0;
@@ -21,14 +21,14 @@ namespace Products1
                 productsInBasket.Clear();
                 while ((line = reader.ReadLine()) != null && !line.Contains("Shopping Basket"))
                 {
-                    productsInBasket.Add(lineToProductParsing(line));
+                    productsInBasket.Add(LineToProductParsing(line));
                 }
-                baskets.Add("Output " + countBasket, new List<Products>(productsInBasket));
+                baskets.Add("Output " + countBasket, new List<IProduct>(productsInBasket));
             }
             return baskets;
         }
 
-        static Products lineToProductParsing(string line)
+        public static Products LineToProductParsing(string line)
         {
             String name;
             bool book = false;

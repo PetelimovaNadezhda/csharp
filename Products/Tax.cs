@@ -22,5 +22,9 @@ namespace Products1
             return cost;
         }
 
+        public double Cost(IProduct p)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

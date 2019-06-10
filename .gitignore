@@ -5,7 +5,12 @@
 /.vs/Shop/v16
 /Shop/obj/Debug
 /Shop/bin/Debug
-/ShopTests
 /Products/bin/Debug
 /Products/obj/Debug
 /Products/App.config
+/Products1Tests/bin/Debug
+/Products1Tests/obj/Debug
+/Products1Tests/Properties
+/ShopTests/bin/Debug
+/ShopTests/obj/Debug
+/ShopTests/Properties

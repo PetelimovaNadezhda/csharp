@@ -12,11 +12,11 @@ namespace Shop
             this.name = name;
         }
 
-        double tax = 0;
-        double sum = 0;
-        public void PrintReceipt(List<Products> products)
+        public double tax = 0;
+        public double sum = 0;
+        public void PrintReceipt(List<IProduct> products)
         {
-            foreach (Products p in products)
+            foreach (IProduct p in products)
             {
                 PrintProductPrice(p);
             }
@@ -24,14 +24,16 @@ namespace Shop
             Console.WriteLine("     " + "Total: " + String.Format("{0:0.00}", Math.Round(sum, 2)));
         }
 
-        public void PrintProductPrice(Products p)
+        public string PrintProductPrice(IProduct p)
         {
-            double currentTax = p.count * new Tax().Cost(p);
+            double currentTax = p.count * new Tax().Cost((Products) p);
             tax += currentTax;
             double price = p.price * p.count + currentTax;
             sum += price;
 
-            Console.WriteLine("     " + " " + p.name + ": " + String.Format("{0:0.00}", Math.Round(price, 2)));
+            string pricePrint = "     " + " " + p.name + ": " + String.Format("{0:0.00}", Math.Round(price, 2));
+            Console.WriteLine(pricePrint);
+            return pricePrint;              
         }
     }
 }

@@ -2,6 +2,6 @@
 {
     public interface ITaxCalculator
     {
-        double Cost(Products p);
+        double Cost(IProduct p);
     }
 }
